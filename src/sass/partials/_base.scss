@@ -1,0 +1,35 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.header,
+.footer {
+  background-color: lightgray;
+  padding: 15px;
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 80px 0px;
+  display: flex;
+  justify-content: center;
+
+  & > * {
+    padding: 0px 30px;
+  }
+}
+
+#active-cancel {
+  text-decoration: none;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.nav-link {
+  color: red;
+}
