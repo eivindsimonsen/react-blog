@@ -10,36 +10,38 @@ import FooterNav from "../layout/FooterNav";
 function Navigation() {
   return (
     <>
-      <Router>
-        <Navbar className="header" expand="lg">
+      <div className="wrapper">
+        <Router>
+          <Navbar className="header" expand="lg">
+            <Container>
+              <NavLink to="/" id="active-cancel" className="brand">
+                React-Blog
+              </NavLink>
+              <Navbar.Toggle aria-controls="basic-navbar-nav" />
+              <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="me-auto">
+                  <NavLink to="/" className="nav-link">
+                    Home
+                  </NavLink>
+                  <NavLink to="/about" className="nav-link">
+                    About
+                  </NavLink>
+                  <NavLink to="/login" className="nav-link">
+                    Login
+                  </NavLink>
+                </Nav>
+              </Navbar.Collapse>
+            </Container>
+          </Navbar>
           <Container>
-            <NavLink to="/" id="active-cancel">
-              <Navbar.Brand>React-Blog</Navbar.Brand>
-            </NavLink>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="me-auto">
-                <NavLink to="/" className="nav-link">
-                  Home
-                </NavLink>
-                <NavLink to="/about" className="nav-link">
-                  About
-                </NavLink>
-                <NavLink to="/login" className="nav-link">
-                  Login
-                </NavLink>
-              </Nav>
-            </Navbar.Collapse>
+            <Routes>
+              <Route path="/" exact element={<Home />} />
+              <Route path="/About" exact element={<About />} />
+              <Route path="/Login" exact element={<Login />} />
+            </Routes>
           </Container>
-        </Navbar>
-        <Container>
-          <Routes>
-            <Route path="/" exact element={<Home />} />
-            <Route path="/About" exact element={<About />} />
-            <Route path="/Login" exact element={<Login />} />
-          </Routes>
-        </Container>
-      </Router>
+        </Router>
+      </div>
 
       <FooterNav />
     </>

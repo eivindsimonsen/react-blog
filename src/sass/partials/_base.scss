@@ -1,35 +1,107 @@
+html,
 body {
   font-family: "Roboto", sans-serif;
+  background-color: $background-color;
+  color: $secondary-color;
+
+  // style for sticking footer to the bottom
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.header,
-.footer {
-  background-color: lightgray;
-  padding: 15px;
+nav,
+footer {
+  background-color: $primary-color;
+}
+
+.header {
+  padding: 20px;
 }
 
 .footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  padding: 80px 0px;
+  padding: 50px 0px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+
+  // style for sticking footer to the bottom
+  flex-shrink: 0;
+
+  @media (min-width: $toPadWidth) {
+    flex-direction: row;
+  }
 
   & > * {
     padding: 0px 30px;
   }
 }
 
+// style for sticking footer to the bottom
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+// style for sticking footer to the bottom
+.wrapper {
+  flex: 1 0 auto;
+}
+
+// Makes sure the brand logo is not getting the active state
 #active-cancel {
   text-decoration: none;
 }
 
 .active {
+  // !important is added to override bootstrap style
+  color: $background-color !important;
   text-decoration: underline;
 }
 
-.nav-link {
-  color: red;
+// Overrides bootstrap link colors
+.nav-link,
+.brand {
+  color: $background-color;
+
+  &:hover {
+    color: $action-color;
+  }
+}
+
+// logo stylings
+.brand {
+  font-size: 1.5rem;
+  margin-right: 20px;
+}
+
+// Creates a wider and higher textarea
+textarea {
+  height: 150px;
+
+  @media (min-width: $toPadWidth) {
+    width: 350px !important;
+  }
+}
+
+// Overrides boostrap toggler styles
+.navbar-toggler {
+  background-color: $background-color;
+}
+
+// Styles for the nav in mobile view
+.navbar-nav {
+  text-align: end;
+  padding: 20px 0px;
+  font-size: 1.6rem;
+  @media (min-width: $toPadMaxWidth) {
+    font-size: 1.3rem;
+    padding: 0px;
+  }
+}
+
+// Label color change because body has color value set
+label {
+  color: $background-color;
 }

@@ -1,0 +1,41 @@
+// colors
+
+$primary-color: #082032;
+$secondary-color: #2c394b;
+$tertiary-color: #334756;
+$background-color: #f2f2f2;
+$action-color: #ff4c29;
+
+// shadows
+@mixin box-shadow {
+  box-shadow: 12px 12px 9px -6px rgba(51, 71, 86, 0.76);
+}
+
+@mixin cta-shadow {
+  box-shadow: 0px 2px 4px 1px rgba(51, 71, 86, 0.76);
+}
+
+// call to actions
+.cta {
+  width: 100px;
+  background-color: $action-color;
+  color: $background-color;
+  border: 1px solid $secondary-color;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+
+  &:hover {
+    background-color: $background-color;
+    color: $secondary-color;
+  }
+}
+
+.cta--shadow {
+  @extend .cta;
+  @include cta-shadow;
+}
+
+// media queries
+$toPadWidth: 675px;
+$toPadMaxWidth: 992px;

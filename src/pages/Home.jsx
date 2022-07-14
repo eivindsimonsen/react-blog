@@ -1,9 +1,11 @@
-import Heading from "../components/Heading/Heading";
+import Intro from "../components/intro/Intro";
+import PopularPosts from "../components/posts/PopularPosts";
 
 function Home() {
   return (
     <>
-      <Heading title="Home" />
+      <Intro />
+      <PopularPosts />
     </>
   );
 }
