@@ -43,3 +43,34 @@ q {
   font-style: italic;
   color: $tertiary-color;
 }
+
+h2 {
+  margin: 30px 0px;
+  text-align: center;
+}
+
+h2::before {
+  content: "";
+  border: 3px solid $tertiary-color;
+  display: block;
+  border-radius: 10px;
+  margin: 80px 0px 30px 0px;
+}
+
+.card-group {
+  gap: 40px;
+}
+
+.card-body {
+  display: grid;
+  align-content: space-between;
+}
+
+.card-body {
+  background-color: $secondary-color;
+  color: $background-color;
+}
+
+.text-muted {
+  color: $primary-color !important;
+}

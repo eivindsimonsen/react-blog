@@ -27,7 +27,7 @@ function FooterNav() {
             <Form.Control as="textarea" rows={3} />
           </Form.Group>
           <div className="mb-3 footer__button">
-            <Button variant="primary" type="submit" className="cta">
+            <Button variant="primary" type="submit" className="cta-footer">
               Submit
             </Button>
           </div>

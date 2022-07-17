@@ -15,6 +15,10 @@ footer {
   background-color: $primary-color;
 }
 
+footer {
+  margin-top: 100px;
+}
+
 .header {
   padding: 20px;
 }
@@ -104,4 +108,8 @@ textarea {
 // Label color change because body has color value set
 label {
   color: $background-color;
+}
+
+.badge {
+  background-color: $action-color !important;
 }
