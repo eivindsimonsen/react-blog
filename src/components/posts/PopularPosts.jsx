@@ -5,8 +5,8 @@ import Button from "react-bootstrap/Button";
 
 function PopularPosts() {
   return (
-    <CardGroup>
-      <Card>
+    <CardGroup className="card-group-featured">
+      <Card className="card-full-width">
         <Card.Img variant="top" src={image} alt="Some text" />
         <Card.Body>
           <Card.Title>Card title</Card.Title>
