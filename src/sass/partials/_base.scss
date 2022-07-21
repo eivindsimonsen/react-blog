@@ -2,7 +2,7 @@ html,
 body {
   font-family: "Roboto", sans-serif;
   background-color: $background-color;
-  color: $secondary-color;
+  color: $secondary-color !important;
 
   // style for sticking footer to the bottom
   height: 100%;
@@ -12,7 +12,7 @@ body {
 
 nav,
 footer {
-  background-color: $primary-color;
+  background: linear-gradient(90deg, rgba(8, 32, 50, 1) 0%, rgba(44, 57, 75, 1) 100%);
 }
 
 footer {

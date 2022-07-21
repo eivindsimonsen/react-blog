@@ -57,6 +57,10 @@ h2::before {
   margin: 80px 0px 30px 0px;
 }
 
+.card {
+  @include box-shadow;
+}
+
 .card-group {
   gap: 40px;
   & > :nth-of-type(1) {
@@ -73,8 +77,6 @@ h2::before {
 .card-body {
   display: grid;
   align-content: space-between;
-  background-color: $secondary-color;
-  color: $background-color;
 }
 
 .text-muted {
