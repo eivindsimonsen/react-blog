@@ -1,6 +1,6 @@
 import Intro from "../components/intro/Intro";
 import PopularPosts from "../components/posts/PopularPosts";
-import Badge from "react-bootstrap/Badge";
+import HeadingTwo from "../components/headings/HeadingTwo";
 
 function Home() {
   return (
@@ -8,10 +8,11 @@ function Home() {
       <Intro />
       <main>
         <section className="popular-section">
-          <h2>
-            Most read posts <Badge className="badge">Popular</Badge>
-          </h2>
+          <HeadingTwo title="Most read posts" badge="Popular" />
           <PopularPosts />
+        </section>
+        <section>
+          <HeadingTwo title="All posts" badge="Latest" />
         </section>
       </main>
     </>

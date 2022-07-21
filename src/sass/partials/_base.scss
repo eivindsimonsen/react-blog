@@ -56,6 +56,9 @@ footer {
 // Makes sure the brand logo is not getting the active state
 #active-cancel {
   text-decoration: none;
+  &:hover {
+    color: $background-color;
+  }
 }
 
 .active {
