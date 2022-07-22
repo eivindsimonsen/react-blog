@@ -104,10 +104,10 @@ h2::before {
   &-posts {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
+    gap: 60px;
 
     & > div:nth-of-type(even) {
-      width: 580px;
+      width: 410px;
     }
   }
 }

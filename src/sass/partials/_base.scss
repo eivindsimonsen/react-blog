@@ -10,6 +10,12 @@ body {
   box-sizing: border-box;
 }
 
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1105px !important;
+  }
+}
+
 nav,
 footer {
   background: linear-gradient(90deg, rgba(8, 32, 50, 1) 0%, rgba(44, 57, 75, 1) 100%);
