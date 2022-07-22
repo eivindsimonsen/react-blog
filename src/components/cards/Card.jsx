@@ -9,13 +9,13 @@ function Cards() {
         <Card.Img variant="top" src={image} alt="Some text" />
         <Card.Body>
           <Card.Title>Card title</Card.Title>
-          <Card.Text>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</Card.Text>
+          <Card.Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate odit sint aliquid omnis cumque officia voluptatem blanditiis saepe nemo incidunt error consectetur ipsam nisi, tempore accusantium ab fuga eos, delectus quisquam optio iste rerum praesentium totam.</Card.Text>
           <Button variant="primary" type="submit" className="cta-card">
             Read more
           </Button>
         </Card.Body>
         <Card.Footer>
-          <small className="text-muted">Published 1 january 2022</small>
+          <small className="text-muted">Published in Feiring, by Ali</small>
         </Card.Footer>
       </Card>
     </>

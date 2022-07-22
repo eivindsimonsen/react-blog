@@ -1,3 +1,4 @@
+// Intro styles
 .intro-image {
   background-image: url(../../img/headline-image-large.jpg);
   height: 50vh;
@@ -44,8 +45,9 @@ q {
   color: $tertiary-color;
 }
 
+// Popular section styles
 h2 {
-  margin: 30px 0px;
+  margin: 50px 0px;
   text-align: center;
 }
 
@@ -59,6 +61,12 @@ h2::before {
 
 .card {
   @include box-shadow;
+  border-radius: 10px !important;
+}
+
+.card-img-top {
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
 }
 
 .card-group {
@@ -81,4 +89,56 @@ h2::before {
 
 .text-muted {
   color: $primary-color !important;
+}
+
+// All posts section styles
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: minmax(600px, auto);
+  row-gap: 80px;
+  column-gap: 40px;
+
+  &-posts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+}
+
+.grid-wrapper-posts__sidebar {
+  grid-column: right;
+  display: grid;
+  row-gap: 50px;
+  height: fit-content;
+
+  & .sidebar {
+    border-radius: 25px;
+  }
+
+  & .sidebar2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & p {
+      font-size: 2rem;
+      margin: 100px 0px;
+    }
+  }
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  background-color: lightgray;
+  justify-content: center;
+  @include box-shadow;
+
+  & > i {
+    font-size: 5.5rem;
+    margin: 40px auto;
+  }
 }

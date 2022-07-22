@@ -3,11 +3,13 @@ import Cards from "../cards/Card";
 
 function PopularPosts() {
   return (
-    <CardGroup className="card-group-featured">
-      <Cards />
-      <Cards />
-      <Cards />
-    </CardGroup>
+    <section className="popular-section">
+      <CardGroup className="card-group-featured">
+        <Cards />
+        <Cards />
+        <Cards />
+      </CardGroup>
+    </section>
   );
 }
 
